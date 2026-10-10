@@ -4,12 +4,17 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run ./src/index.ts"
+    "dev": "bun run ./src/index.ts",
+    "models": "bun run ./src/models.ts",
+    "structured-outputs": "bun run ./src/structured-outputs.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "openai": "^7.32.0"
   }
 }
