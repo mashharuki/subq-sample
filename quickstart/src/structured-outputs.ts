@@ -12,7 +12,7 @@ const client = new OpenAI({
 const main = async () => {
   // AIモデルにリクエストを送信し、構造化されたJSONスキーマでの応答を取得する
   const response = await client.responses.create({
-    model: "subq-preview",
+    model: "subq-snap-preview",
     instructions: "Return Nobel Peace Prize laureates for only the year range in the user message. One array entry per laureate (shared prizes produce multiple entries with the same year). Set kind to 👤 for a person and 🏛️ for an organization or institution. Use ISO 3166-1 alpha-2 country codes. Keep each motivation to one sentence.",
     input: "List Nobel Peace Prize winners from 2022 through 2024.",
     text: {

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "bun run ./src/index.ts",
     "models": "bun run ./src/models.ts",
-    "structured-outputs": "bun run ./src/structured-outputs.ts"
+    "structured-outputs": "bun run ./src/structured-outputs.ts",
+    "function-calling": "bun run ./src/function-calling.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
